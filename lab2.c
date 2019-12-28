@@ -32,7 +32,7 @@ void *subp1(void *arg){
     for(i=1;i<=100;i++){
         P(semid,0); 
         a+=i;
-        printf("thread 1 is counting...\n");
+        printf("thread 1: I am counting...\n");
         V(semid,1);
     }
     return NULL;
@@ -42,7 +42,7 @@ void *subp2(void *arg){
     int i=0;
     for(i=1;i<=100;i++){
         P(semid,1);
-        printf("Cunrrent sum is: %d\n",a); //打印中间结果
+        printf("thread 2: Cunrrent sum is: %d\n",a); //打印中间结果
         V(semid,0);
     }
     return NULL;
