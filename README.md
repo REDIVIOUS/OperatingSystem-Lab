@@ -1,2 +1,2 @@
-# OperatingSystem-Lab
-HUST 操作系统实验
+# UGP-HustLab-OperatingSystem
+[undergraduate coursework in hust] Labs of operating system principle.
